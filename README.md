@@ -3,7 +3,7 @@
 #### 1. 添加maven:
     allprojects {
 	    repositories {
-	        maven { url 'https://www.jitpack.io' }
+	        maven { url 'https://jitpack.io' }
 	    }
 	}
 #### 2. module添加引用
