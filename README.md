@@ -8,7 +8,7 @@
 	}
 #### 2. module添加引用
 	dependencies {
-        implementation 'com.github.taijuan.Permission:PermissionKt:1.1.0'
+        implementation 'com.github.taijuan.Permission:1.1.0'
 	}
 ## 截图
 <img src="./1.jpeg" width = "25%" />
