@@ -8,7 +8,6 @@
 	}
 #### 2. module添加引用
 	dependencies {
-	    图片视频选择
         implementation 'com.github.taijuan.Permission:PermissionKt:1.1.0'
 	}
 ## 截图
