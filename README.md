@@ -1,15 +1,32 @@
-# Permission[![](https://jitpack.io/v/taijuan/Permission.svg)](https://jitpack.io/#taijuan/Permission)
-## 集成
-#### 1. 添加maven:
+# AndroidKit[![](https://jitpack.io/v/taijuan/AndroidKit.svg)](https://jitpack.io/#taijuan/AndroidKit)
+## 添加maven:
     allprojects {
 	    repositories {
 	        maven { url 'https://jitpack.io' }
 	    }
 	}
-#### 2. module添加引用
+## (PermissionKit)集成
+#### module添加引用
 	dependencies {
-        implementation 'com.github.taijuan.Permission:1.1.0'
+        implementation 'com.github.taijuan.AndroidKit:permissionKit:1.1.2'
 	}
-## 截图
-<img src="./1.jpeg" width = "25%" />
+
+
+
+## (RetrofitKit)集成
+
+#### module添加引用
+	dependencies {
+        implementation 'com.github.taijuan.AndroidKit:retrofitKit:1.1.2'
+	}
+
+
+
+## (UUIDKit)集成
+
+#### module添加引用
+	dependencies {
+        implementation 'com.github.taijuan.AndroidKit:uuidKit:1.1.2'
+	}
+
 
