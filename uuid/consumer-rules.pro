@@ -1,0 +1,2 @@
+-keep class ta.utdid2.**{*;}
+-keep class ut.device.**{*;}
