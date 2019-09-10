@@ -32,20 +32,19 @@ class PermissionFragment : Fragment() {
         val grantedPermissions = mutableListOf<String>()
         permissions.forEachIndexed { index, permission ->
             if (grantResults[index] == PackageManager.PERMISSION_DENIED) {
-                if (shouldShowRequestPermissionRationale(permission)) {
-                    deniedPermissions.add(permission)
-                } else {
+                if (!shouldShowRequestPermissionRationale(permission)) {
                     neverAskPermissions.add(permission)
                 }
+                deniedPermissions.add(permission)
             } else {
                 grantedPermissions.add(permission)
             }
         }
-        if (deniedPermissions.isNotEmpty()) {
-            permissionsCallback?.onDenied(deniedPermissions)
-        }
         if (neverAskPermissions.isNotEmpty()) {
             permissionsCallback?.onNeverAskAgain(neverAskPermissions)
+        }
+        if (deniedPermissions.isNotEmpty()) {
+            permissionsCallback?.onDenied(deniedPermissions)
         }
         if (deniedPermissions.isEmpty() && neverAskPermissions.isEmpty()) {
             permissionsCallback?.onGranted()
