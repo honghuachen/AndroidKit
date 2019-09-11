@@ -1,4 +1,8 @@
 <resources>
-    <string name="app_name">Permisstion</string>
+    <string name="AndroidKit">AndroidKit</string>
     <string name="request_permission">Request Permission</string>
+    <string name="uuid">UUID</string>
+    <string name="test_retrofit">Test Retrofit</string>
+    <string name="test_uuid">Test UUID</string>
+    <string name="test_permission">Test Permission</string>
 </resources>
