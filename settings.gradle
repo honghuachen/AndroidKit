@@ -1,1 +1,1 @@
-include ':app', ':permissionKit', ':retrofitKit', ':uuidKit'
+include ':app', ':permissionKit', ':retrofitKit', ':uuidKit', ':logkit'
